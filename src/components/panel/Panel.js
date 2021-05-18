@@ -26,14 +26,14 @@ function Panel() {
     },
   ];
   return (
-    <aside className="bg-white bg-opacity-25 m-2 rounded-xl border-2 border-opacity-25 border-white backdrop-filter backdrop-blur-sm p-5 w-2/12">
+    <aside className="bg-white bg-opacity-50 m-2 rounded-xl border-2 border-opacity-25 border-white backdrop-filter backdrop-blur-sm p-5 w-2/12">
       <ul className="list-none">
         {links.map((link) => (
           <li className="h-14" key={link?.name}>
             <Link
               to={link?.name}
-              className="text-white backdrop-blur-md block p-2 text-lg font-bold rounded border-2 border-transparent"
-              activeClassName="border-black"
+              className="text-white backdrop-blur-md block p-2 text-xl font-bold rounded border-2 border-transparent"
+              activeClassName="text-yellow-400"
             >
               {link.label}
             </Link>
